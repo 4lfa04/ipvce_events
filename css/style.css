@@ -1,0 +1,225 @@
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem 4rem var(--color-light)
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0, auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto;
+    background-color: #111e88;
+}
+
+.container-started {
+    display: flex;
+    width: 96%;
+    height: 96%;
+    margin: auto auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: var(--color-dark)
+}
+
+a {
+    color: var(--color-dark)
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+
+small {
+    font-size: 0.76rem;
+}
+
+p {
+    color: var(--color-dark-variant);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.carta {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.signup-card {
+    background-color: var(--color-info-light);
+    width: 35%;
+    height: 80%;
+}
+
+.signup-card h2 {
+    width: 80%;
+    text-align: center;
+}
+
+.signup-card form {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.signup-card form div {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.signup-card form div input, .signup-card form div select, .signup-card form input{
+    background-color: var(--color-info-dark);
+    color: var(--color-background);
+    padding: 5px;
+    font-size: large;
+    border-radius: var(--border-radius-1);
+    transition: .4s;
+}
+.signup-card form div input:hover, .signup-card form div select:hover, .signup-card form input:hover, .signup-card form div input:focus, .signup-card form div select:focus, .signup-card form input:focus {
+    background-color: var(--color-dark-variant);
+    color: var(--color-background);
+    padding: 5px;
+    font-size: large;
+    border-radius: var(--border-radius-1);
+}
+
+
+.signup-card form div input, .signup-card form div select {
+    height: 100%;
+}
+
+
+.login-card {
+    background-color: var(--color-info-light);
+    width: 60%;
+    height: 80%;
+}
+
+
+
+.texto-flotante {
+    position: fixed;
+    display: none;
+    top: 0;
+}
+
+/* Especialidades */
+.especialidades {
+    background-color: var(--color-info-dark);
+    width: 80%;
+    height: 80%;
+    border-radius: var(--border-radius-2);
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: stretch;
+}
+
+.especialidades > div {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.especialidades div > div {
+    display: none;
+}
